@@ -1,0 +1,35 @@
+﻿<Window x:Class="CandidateManagement_DOQUOCHUY.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CandidateManagement_DOQUOCHUY"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="581" Width="980" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid x:Name="btnButton">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="213*"/>
+            <ColumnDefinition Width="559*"/>
+            <ColumnDefinition Width="208*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Email" HorizontalAlignment="Center" Margin="0,51,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="2" Height="87" Width="153">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.185"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <PasswordBox x:Name="txtPassword" Grid.Column="3" HorizontalAlignment="Left" Margin="46,147,0,0" VerticalAlignment="Top" Width="338" Height="47"/>
+        <Button x:Name="btnlLogin" Grid.Column="3" Content="Login" HorizontalAlignment="Left" Margin="46,252,0,0" VerticalAlignment="Top" Height="84" Width="122" Click="btnlLogin_Click"/>
+        <TextBox x:Name="txtEmail" Grid.Column="3" HorizontalAlignment="Left" Margin="46,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Height="45"/>
+        <Label Content="Password" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="32,147,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnCancle" Grid.Column="3" Content="Cancle" HorizontalAlignment="Left" Margin="262,252,0,0" VerticalAlignment="Top" Height="84" Width="122" Click="btnCancle_Click" />
+        <Label Grid.Column="3" Content="LOGIN PAGE" HorizontalAlignment="Left" Margin="175,0,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
